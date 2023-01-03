@@ -8,8 +8,10 @@ const cors = require("cors");
 app.use(express.json());
 app.use(cors());
 
+// railway mongo : mongodb://mongo:CynUEiQmpAfKU7Kkc4LY@containers-us-west-33.railway.app:6534
+//atlas mongo: "mongodb+srv://aniket:aniket5552@cluster0.drjrthk.mongodb.net/zen?retryWrites=true&w=majority"
 mongoose.connect(
-  "mongodb+srv://aniket:aniket5552@cluster0.drjrthk.mongodb.net/zen?retryWrites=true&w=majority",
+  "mongodb://mongo:CynUEiQmpAfKU7Kkc4LY@containers-us-west-33.railway.app:6534",
   () => {
     console.log("DB connected");
   }
