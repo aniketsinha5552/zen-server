@@ -15,6 +15,11 @@ mongoose.connect(
   }
 );
 
+//hope page
+app.get("/",(req,res)=>{
+  res.send("App is running")
+})
+//get all the users data
 app.get("/users", (req, res) => {
   userModel.find({}, (err, result) => {
     if (err) {
